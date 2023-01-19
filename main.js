@@ -3,6 +3,8 @@ require('dotenv').config();
 const moment = require('moment-timezone');
 const mysql = require('mysql');
 
+const PORT = process.env.PORT || 3000;
+
 const { Events, Client, IntentsBitField } = require('discord.js');
 
 const client = new Client({
